@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜蜜聊天报告</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffb3c1, #ffc8e0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: backgroundAnimation 8s infinite alternate ease-in-out;
+        }
+
+        /* 背景渐变动画 */
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(135deg, #ffb3c1, #ffc8e0); }
+            100% { background: linear-gradient(135deg, #ff7f91, #ffb3c1); }
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+            width: 350px;
+            padding: 20px;
+            text-align: center;
+            transform: scale(1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            animation: float 3s infinite alternate ease-in-out;
+        }
+
+        /* 图片浮动效果 */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+
+        .header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #ff6f91;
+            text-shadow: 1px 1px 4px rgba(255, 111, 145, 0.4);
+        }
+
+        .stat {
+            background-color: rgba(255, 236, 243, 0.7);
+            padding: 15px;
+            border-radius: 15px;
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            color: #555;
+        }
+
+        .stat div {
+            text-align: center;
+        }
+
+        .stat h2 {
+            font-size: 18px;
+            margin: 5px 0;
+            color: #ff6f91;
+        }
+
+        .stat p {
+            font-size: 14px;
+            color: #999;
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+
+        .footer img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: #ff6f91;
+            margin-bottom: 5px;
+        }
+
+        .qr-code {
+            margin-top: 10px;
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            animation: glow 3s infinite alternate;
+        }
+
+        /* 暧昧的光晕效果 */
+        @keyframes glow {
+            0% { box-shadow: 0 0 10px rgba(255, 111, 145, 0.5); }
+            100% { box-shadow: 0 0 20px rgba(255, 111, 145, 1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <img src="./Love_files/image1.jpg" alt="User 1">
+            <img src="./Love_files/image2.jpg" alt="User 2">
+        </div>
+
+        <h1>望白月 & Sunny小婷 的甜蜜聊天报告</h1>
+
+        <div class="stat">
+            <div>
+                <h2>快乐源泉</h2>
+                <p>Source of happiness ！</p>
+            </div>
+            <div>
+                <h2>夜聊伙伴</h2>
+                <p>Soul mate ！ ！ ！</p>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div>
+                <h2>108 天</h2>
+                <p>聊天天数</p>
+            </div>
+            <div>
+                <h2>9008 条</h2>
+                <p>发送消息</p>
+            </div>
+            <div>
+                <h2>7750 条</h2>
+                <p>收到消息</p>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div>
+                <h2>哈哈哈</h2>
+                <p>年度关键词</p>
+            </div>
+            <div>
+                <h2>102394</h2>
+                <p>总字数</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>对你的话说不完 ！ ！ ！</p>
+            <img src="./Love_files/image3.jpg" alt="Emoji">
+            <img src="./Love_files/image4.jpg" alt="QR Code" class="qr-code">
+			<p>还想看更多，更详细的嘛！！婷婷宝~ 💖 <a href="page3.html">未完待续……下一页 ➔</a></p>
+        </div>
+    </div>
+<!-- 	<audio id="backgroundMusic" src="./Love_files/love.mp3" autoplay loop></audio>
+	
+	    <script>
+	        window.onload = function() {
+	            var audio = document.getElementById('backgroundMusic');
+	            audio.play();
+	        };
+	    </script> -->
+		<script src="./Love_files/audio.js"></script>
+</body>
+</html>

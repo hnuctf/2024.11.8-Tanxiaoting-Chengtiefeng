@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜蜜聊天解析</title>
+    <style>
+        /* 页面基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffe6e9, #ffd1dc);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            color: #ff6b81;
+            font-size: 2.5em;
+            margin-top: 20px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 图表卡片样式 */
+        .chart-container {
+            background: white;
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .chart-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #ff6b81;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        p {
+            color: #666;
+            font-size: 1em;
+            line-height: 1.6em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* 图表图片样式 */
+        .chart-img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .chart-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* 页面底部样式 */
+        .footer {
+            margin-top: 30px;
+            color: #888;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ff6b81;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 页面标题 -->
+    <h1>甜蜜聊天解析</h1>
+
+    <!-- 卡片 1：日历热力图 -->
+    <div class="chart-container">
+        <h2>日历热力图 🌞</h2>
+        <img src="./Love_files/image8.jpg" alt="日历热力图" class="chart-img">
+        <p>从这张图可以看到，他们的互动几乎贯穿全年。每一个高亮的日子，都是两人彼此关心和分享的印记，日复一日地编织着这段甜蜜的记忆。</p>
+    </div>
+
+    <!-- 卡片 2：聊天频率柱状图 -->
+    <div class="chart-container">
+        <h2>聊天频率峰值 📈</h2>
+        <img src="./Love_files/image9.jpg" alt="聊天频率柱状图" class="chart-img">
+        <p>聊天的频率随着时间的推移在攀升。尤其是在某些特定时段，聊天记录突然增多，仿佛是在特别的日子里，彼此的情感被点燃，话语间充满了思念与关切。</p>
+    </div>
+
+    <!-- 卡片 3：一周消息分布图 -->
+    <div class="chart-container">
+        <h2>一周消息分布 📅</h2>
+        <img src="./Love_files/image10.jpg" alt="一周消息分布图" class="chart-img">
+        <p>从一周的消息分布图可以看出，周末的互动尤其频繁。也许是忙碌了一周后，他们更想在这时倾诉彼此的心情，让两人之间的感情更进一步地加深。</p>
+    </div>
+
+    <!-- 页面底部 -->
+    <div class="footer">
+        <p>有句话是GPT写的，婷婷猜一猜！ 🌙💖 <a href="page5.html">未完待续……下一页 ➔</a></p>
+    </div>
+<!-- 	<audio id="backgroundMusic" src="./Love_files/love.mp3" autoplay loop></audio>
+	
+	    <script>
+	        window.onload = function() {
+	            var audio = document.getElementById('backgroundMusic');
+	            audio.play();
+	        };
+	    </script> -->
+		<script src="./Love_files/audio.js"></script>
+
+</body>
+</html>
